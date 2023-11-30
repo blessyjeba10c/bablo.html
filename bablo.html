@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes and Photos Sharing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Notes and Photos Sharing App</h1>
+  </header>
+
+  <main>
+    <section class="notes">
+      <h2>Write and Share Notes</h2>
+      <textarea id="noteInput" placeholder="Write your note here"></textarea>
+      <button onclick="postNote()">Post Note</button>
+      <hr>
+      <h2>Posted Notes</h2>
+      <div id="notesList"></div>
+    </section>
+
+    <section class="photos">
+      <h2>Take and Share Photos</h2>
+      <video id="videoElement" autoplay></video>
+      <button id="captureButton">Capture Photo</button>
+      <canvas id="canvasElement"></canvas>
+      <button id="postPhotoButton" disabled>Post Photo</button>
+      <hr>
+      <h2>Posted Photos</h2>
+      <div id="postedPhotos"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
